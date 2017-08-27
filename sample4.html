@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <script type="text/javascript"
+	    src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <link href="sample4.css" rel="stylesheet" type="text/css">
+    <link href="sample4a.css" rel="stylesheet" type="text/css">
+    <title>sample4</title>
+  </head>
+
+  <body>
+    <script src="sample4.js"></script>
+    
+    <!-- ヘッダー -->
+    <div id="header" class="demo1">
+      <div class="header_top">
+	<p id="demo">My Mapping</p>
+      </div>
+        <div class="fixheader">
+            <ul class="topmenu">
+                <li><a href="#">Upload</a></li>
+                <li><a href="#">Like</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ユーザー名 -->
+    <form name="Sample2_form" action="Sample4.html">
+      <p>ユーザー名</p>
+      <input type="text" id="user" name="username" value="Username"></br>
+      <input type="button" id="enter" value="ユーザー名" onclick="Sample2()">
+    </form>
+    
+    <!-- 写真タイトル -->
+    <form name="Sample1_form" action="Sample4.html">
+      <p>タイトル</p>
+      <input type="text" id="titlei" name="title" value="Title"></br>
+      <input type="button" id="enter" value="タイトル名" onclick="Sample1()">
+    </form>
+
+    <!-- 写真投稿 -->
+    <div id="dropzone" effectAllowed="move">
+      <p>ここに写真をドラッグしてください</br></br>
+      <p>またはファイルを選択してください</p>
+      <input type="file" value="ファイルを選択" name="picture">
+    </div>
+    <ul id="files" name="picture"></ul>
+    <script src="sample4a.js"></script>
+
+    <!-- コメント投稿 -->
+    <div id="putcommenti" name="putcomment">
+      <p>コメント</p>
+      <input type="textarea" id="commenti" name="comment" value="Comment"></br>
+    </div>
+
+    <!-- タグ -->
+    <form name="Sample4_form" id="radio" action="Sample4.html">
+      <p>タグ</p>
+      <input type="radio" id="radio1" name="radio" value="タグ1"/>タグ1<br>
+      <input type="radio" id="radio2" name="radio" value="タグ2"/>タグ2<br>
+      <input type="radio" id="radio3" name="radio" value="タグ3"/>タグ3<br>
+      <input type="button" value="タグ登録" onclick="Sample3()"><br>
+      
+      <input type="button" id="newtag" value="新規タグ作成"><br>
+     
+    </form>
+    
+
+  </body>
+
+</html>
